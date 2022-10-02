@@ -1,0 +1,167 @@
+<resources>
+    <string name="app_name">U player</string>
+    <string name="tab_text_1">File</string>
+    <string name="tab_text_2">Folder</string>
+    <string name="tab_text_3">Hidden</string>
+    <string name="title_activity_main">MainActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="notify_about_extra">"what are extra file?
+        \n\nextra file are those file,that start with dot(.), or those video with changed extension.
+        \n in short,this will scan full memory for all type of video
+        \n\ntips: Avoid deleting these file"</string>
+
+    <string-array name="layout_option">
+        <item>List View</item>
+        <item>Grid View</item>
+    </string-array>
+
+    <string-array name="theme_option">
+        <item>Normal</item>
+        <item>Coloured</item>
+    </string-array>
+
+    <string-array name="startingMode">
+        <item>Portrait</item>
+        <item>Landscape</item>
+    </string-array>
+
+    <string-array name="securityQuestion">
+        <item>Select your question</item>
+        <item>What\u0027s your favourite name?</item>
+        <item>What\u0027s your birthday?</item>
+        <item>What\u0027s your hobby?</item>
+        <item>Who is your favourite person?</item>
+        <item>What\u0027s your favourite game?</item>
+        <item>What\u0027s your favourite quotation?</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="sound_icon">soundIcon</string>
+    <string name="brightness_icon">brightness icon</string>
+    <string name="notify_icon">notify icon</string>
+    <string name="backspace">backspace</string>
+    <string name="notify_button">notify button</string>
+    <string name="backspace_button">backspace button</string>
+    <string name="forward">forward</string>
+    <string name="exit_button">exit button</string>
+    <string name="lock_button">lock button</string>
+    <string name="unlock_button">unlock button</string>
+    <string name="prvious_button">prvious button</string>
+    <string name="backward">backward</string>
+    <string name="pause">pause</string>
+    <string name="fullscreen">fullscreen</string>
+    <string name="video_thumb">video thumb</string>
+    <string name="more">more</string>
+    <string name="folder">folder</string>
+    <string name="your_review_here">your review here</string>
+    <string name="no_file_found">no file found</string>
+    <string name="search_in_all_files">search in all files</string>
+    <string name="screen">screen</string>
+    <string name="video">video</string>
+    <string name="review">Review</string>
+    <string name="theme">Theme</string>
+    <string name="layout_amp_theme"><![CDATA[layout & theme]]></string>
+    <string name="no_question_selected">No question selected</string>
+    <string name="cancel">Cancel</string>
+    <string name="submit">submit</string>
+    <string name="what_are_extra_file">What are extra file</string>
+    <string name="zero_string">0</string>
+    <string name="file_name_here">File name here</string>
+    <string name="dummy">sjkjks</string>
+    <string name="start_video_in">start video in</string>
+    <string name="extra_files_layout">Extra files layout:</string>
+    <string name="theme_with_colon">Theme:</string>
+    <string name="search">search</string>
+    <string name="gift">gift</string>
+    <string name="setting">Setting</string>
+    <string name="file">file</string>
+    <string name="dummy_time">00:00:00/99:99:99</string>
+    <string name="answer">Answer</string>
+    <string name="files_layout_with_colon">Files layout:</string>
+    <string name="one_number">1</string>
+    <string name="two_number">2</string>
+    <string name="three_number">3</string>
+    <string name="four_number">4</string>
+    <string name="five_number">5</string>
+    <string name="six_number">6</string>
+    <string name="seven_number">7</string>
+    <string name="eight_number">8</string>
+    <string name="nine_number">9</string>
+    <string name="forgot_pin">Forgot pin</string>
+    <string name="dummy_aaaaa">aaaaa</string>
+    <string name="dummy_bbbbbbbbb">bbbbbbbbb</string>
+    <string name="dummy_aaaaaaaa">aaaaaaaaaaa</string>
+    <string name="select_security_question">Select security question:</string>
+    <string name="enter_security_answer">Enter security answer</string>
+    <string name="files">Files</string>
+    <string name="extra">Extra</string>
+    <string name="folder2">Folder</string>
+    <string name="rotate_button">rotate button</string>
+    <string name="slash">\\</string>
+    <string name="no_videos_found">No Videos Found</string>
+    <string name="under_development">Under development</string>
+    <string name="new_folder">New folder</string>
+    <string name="dummy_4_videos">4 videos</string>
+    <string name="ok">OK</string>
+    <string name="delete">Delete</string>
+    <string name="share">Share</string>
+    <string name="double_click_to_fast_forward_or_rewind">double click to fast forward or rewind</string>
+    <string name="start_video_in_portrait_mode">start video in portrait mode</string>
+    <string name="start_video_in_landscape_mode">start video in landscape mode</string>
+    <string name="coloured">Coloured</string>
+    <string name="normal">normal</string>
+    <string name="caption">caption</string>
+    <string name="security">security</string>
+    <string name="enter_your_pin">Enter your pin</string>
+    <string name="continuee">Continue</string>
+    <string name="sort_by">Sort by</string>
+    <string name="details">Details</string>
+    <string name="title_activity_main2">MainActivity</string>
+    <string name="favourite">favourite</string>
+    <string name="grid">Grid</string>
+    <string name="list">List</string>
+    <string name="date">Date</string>
+    <string name="a_to_z">A to Z</string>
+    <string name="z_to_a">Z to A</string>
+    <string name="show_as">Show As</string>
+    <string name="locker">Locker</string>
+    <string name="locker_caps">LOCKER</string>
+    <string name="add_smarter_lock">Add smarter lock</string>
+    <string name="add_smart_lock">Add smart lock</string>
+    <string name="write_4_digit_pin">write 4 digit pin</string>
+    <string name="confirm_pin">confirm pin</string>
+    <string name="locker_message">This will be used for locker. By entering this pin, you can access locker. if you use the other pin, empty locker will be shown.</string>
+    <string name="lock">Lock</string>
+    <string name="purchase">Purchase</string>
+    <string name="rename">Rename</string>
+    <string name="restore">Restore</string>
+    <string name="name">Name</string>
+    <string name="enter_new_name">Enter new name</string>
+    <string name="name_colon">Name :</string>
+    <string name="duration_colon">Duration :</string>
+    <string name="size_colon">Size :</string>
+    <string name="resolution_colon">Resolution :</string>
+    <string name="deep_scanning">Deep Scanning</string>
+    <string name="off">OFF</string>
+    <string name="on">ON</string>
+    <string name="not_available">Not available</string>
+    <string name="will_be_available_later">will be available later</string>
+    <string name="extra_file">Extra file</string>
+    <string name="just_specifier">%1$s</string>
+    <string name="speed_1_0x">1.0X</string>
+    <string name="setup_pin_first">Setup pin first</string>
+    <string name="create_a_pin">Create a pin</string>
+    <string name="enter_pin">Enter pin</string>
+    <string name="pin_does_not_match">Pin doesn\'t match</string>
+    <string name="enter_again">Enter again</string>
+    <string name="successful">Successful</string>
+    <string name="incorrect_pin">Incorrect Pin</string>
+    <string name="u_player">U player</string>
+</resources>

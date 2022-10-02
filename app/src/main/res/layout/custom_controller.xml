@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:id="@+id/linearLayoutNameAndBack"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:background="@drawable/neu_round_less_trans"
+        android:backgroundTint="@color/neu_background_dark_trans"
+        android:orientation="horizontal"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp">
+
+        <ImageView
+            android:id="@+id/imageViewExitPlayer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/shadow_back_dark"
+            android:contentDescription="@string/exit_button"
+            android:padding="8dp"
+            android:src="@drawable/ic_exit_player" />
+
+        <TextView
+            android:id="@+id/textViewFileName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/shadow_back_dark"
+            android:fontFamily="sans-serif-medium"
+            android:maxLines="3"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:text="@string/file_name_here"
+            android:textColor="@color/text_color_white"
+            android:textSize="20sp" />
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/imageViewUnlock"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/unlocked"
+        android:contentDescription="@string/lock_button"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="3dp"
+        android:visibility="gone"/>
+    <ImageView
+        android:id="@+id/imageViewRotateButton"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/ic_screen_rotation"
+        android:layout_above="@id/bottomLinearLayout"
+        android:layout_alignParentStart="true"
+        android:contentDescription="@string/rotate_button"
+        android:layout_marginStart="3dp"
+        android:layout_marginBottom="5dp"/> <!-- rotate button-->
+
+    <ImageView
+        android:id="@+id/imageViewCaption"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/textViewPlayBackSpeed"
+        android:src="@drawable/ic_caption"
+        android:layout_alignParentEnd="true"
+        android:contentDescription="@string/caption"/>
+
+    <TextView
+        android:id="@+id/textViewPlayBackSpeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/speed_1_0x"
+        android:textStyle="italic"
+        android:gravity="center"
+        android:background="@drawable/playback_speed_background"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@+id/bottomLinearLayout"
+        android:layout_marginBottom="5dp"
+        android:textColor="#000000"/>
+
+    <LinearLayout
+        android:id="@+id/bottomLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/neu_round_less_trans"
+        android:backgroundTint="@color/neu_background_dark_trans"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="bottom">
+                <TextView
+                    android:id="@+id/exo_position"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:textColor="@color/text_color_white"
+                    tools:text="01:10"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginEnd="4dp"
+                    android:text="@string/slash"
+                    android:textColor="@color/text_color_white"/>
+
+                <TextView
+                    android:id="@+id/exo_duration"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    tools:text="12:50"
+                    android:textColor="@color/text_color_white"/>
+
+            </LinearLayout>
+
+            <com.google.android.exoplayer2.ui.DefaultTimeBar
+                android:id="@+id/exo_progress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/shadow_back_dark"
+                app:unplayed_color="#434343"
+                app:played_color="#32504B"
+                app:buffered_color="#8F8F8F"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lastLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:padding="4dp"
+            android:orientation="horizontal"
+            android:weightSum="7">
+
+            <ImageView
+                android:id="@+id/imageViewLockButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="4dp"
+                android:background="@drawable/shadow_back_dark"
+                android:contentDescription="@string/unlock_button"
+                android:src="@drawable/unlocked"/>
+
+            <ImageView
+                android:id="@+id/imageViewPrevious"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:padding="4dp"
+                android:background="@drawable/shadow_back_dark"
+                android:contentDescription="@string/prvious_button"
+                android:src="@drawable/ic_previous"/>
+
+            <ImageView
+                android:id="@+id/exo_rew"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="4dp"
+                android:background="@drawable/shadow_back_dark"
+                android:contentDescription="@string/backward"
+                android:src="@drawable/ic_backward"/>
+
+            <ImageView
+                android:id="@+id/imageViewPause"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:padding="4dp"
+                android:background="@drawable/shadow_back_dark"
+                android:contentDescription="@string/pause"
+                android:src="@drawable/ic_pause"/>
+
+            <ImageView
+                android:id="@+id/exo_ffwd"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="4dp"
+                android:background="@drawable/shadow_back_dark"
+                android:contentDescription="@string/forward"
+                android:src="@drawable/ic_forward"/>
+
+            <ImageView
+                android:id="@+id/imageViewNext"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:padding="4dp"
+                android:background="@drawable/shadow_back_dark"
+                android:contentDescription="@string/next"
+                android:src="@drawable/ic_skip_next"/>
+
+            <ImageView
+                android:id="@+id/imageViewFullScreen"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:padding="4dp"
+                android:background="@drawable/shadow_back_dark"
+                android:contentDescription="@string/fullscreen"
+                android:src="@drawable/ic_crop"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

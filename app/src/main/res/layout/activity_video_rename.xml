@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".videoRename"
+    android:orientation="vertical"
+    android:background="@drawable/corner_round"
+    android:padding="15dp">
+
+    <TextView
+        android:id="@+id/textViewRenameTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/rename"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="#000000"/>
+    <TextView
+        android:id="@+id/textViewNewTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewRenameTemp"
+        android:text="@string/enter_new_name"
+        android:textSize="15sp"
+        android:textColor="#272727"/>
+
+    <EditText
+        android:id="@+id/editTextRename"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewNewTemp"
+        android:background="@drawable/background_edit_text"
+        android:inputType="text"
+        android:textColor="#2B2A2A"
+        android:hint="@string/name"
+        android:layout_marginTop="15dp"
+        android:autofillHints="@string/name" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="3dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/editTextRename">
+        <Button
+            android:id="@+id/buttonCancelRename"
+            android:layout_width="0dp"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_weight="1"
+            android:textColor="#2E2E2E"
+            android:text="@string/cancel"
+            android:textSize="18sp"
+            android:textAllCaps="true"
+            android:layout_marginEnd="5dp"/>
+
+        <Button
+            android:id="@+id/buttonOkRename"
+            android:layout_width="0dp"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_weight="1"
+            android:text="@string/ok"
+            android:textColor="#165FDC"
+            android:textSize="20sp"
+            android:layout_marginStart="5dp"/>
+    </LinearLayout>
+
+</RelativeLayout>

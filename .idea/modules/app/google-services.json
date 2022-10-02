@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "269477240835",
+    "firebase_url": "https://uplayer-76f7c.firebaseio.com",
+    "project_id": "uplayer-76f7c",
+    "storage_bucket": "uplayer-76f7c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:269477240835:android:3599bab4f136eadaeb6e36",
+        "android_client_info": {
+          "package_name": "com.example.learning"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "269477240835-jjd2tpqkoq31e9o8rqae3d0c3ag0llpe.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.learning",
+            "certificate_hash": "cdd630e94edab170441208c2a4de311212917ffe"
+          }
+        },
+        {
+          "client_id": "269477240835-u30bd53c3gptn98qj39e924bg3uikftr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBn6DcUhajyNPgLFjAKHpf8HB4ERno81Ps"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "269477240835-u30bd53c3gptn98qj39e924bg3uikftr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

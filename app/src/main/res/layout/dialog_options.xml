@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/neu_round_less_4"
+    android:padding="8dp"
+    android:layout_margin="4dp">
+
+    <android.widget.Button
+        android:id="@+id/buttonDelete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/shadow_up_ripple"
+        android:text="@string/delete"
+        android:textColor="@color/text_color" />
+
+    <android.widget.Button
+        android:id="@+id/buttonRename"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonDelete"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/shadow_up_ripple"
+        android:text="@string/rename"
+        android:textColor="@color/text_color" />
+
+    <android.widget.Button
+        android:id="@+id/buttonDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonRename"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/shadow_up_ripple"
+        android:text="@string/details"
+        android:textColor="@color/text_color" />
+
+    <android.widget.Button
+        android:id="@+id/buttonShare"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonDetails"
+        android:layout_margin="2dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/shadow_up_ripple"
+        android:text="@string/share"
+        android:textColor="@color/text_color" />
+
+</RelativeLayout>

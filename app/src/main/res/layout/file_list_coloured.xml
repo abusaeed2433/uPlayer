@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="2dp"
+    android:layout_marginLeft="2dp"
+    android:layout_marginRight="2dp"
+    android:elevation="5dp"
+    android:padding="4dp"
+    android:id="@+id/linearLayoutFileList">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:orientation="horizontal"
+        android:weightSum="100"
+        android:background="@drawable/coloured_gradient_background"
+        android:baselineAligned="false">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="98"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="3dp">
+            <ImageView
+                android:id="@+id/ImageViewThumbnail"
+                android:layout_width="110dp"
+                android:layout_height="70dp"
+                android:background="@drawable/round_corner_only"
+                android:contentDescription="@string/video_thumb"/>
+
+            <TextView
+                android:id="@+id/TextViewTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:textAllCaps="false"
+                android:textStyle="normal"
+                android:text="@string/dummy"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif"
+                android:background="#00DAEDCC"
+                android:maxLines="4"
+                android:layout_marginStart="3dp"/>
+
+            <ImageButton
+                android:id="@+id/ImageButtonMore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_more"
+                android:background="#00DAEDCC"
+                android:contentDescription="@string/more"
+                android:layout_gravity="center_vertical"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

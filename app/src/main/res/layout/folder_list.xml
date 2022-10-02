@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="100"
+    android:background="@drawable/shadow_background_up"
+    android:layout_margin="4dp"
+    android:padding="8dp">
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_weight="20"
+        android:padding="4dp"
+        android:contentDescription="@string/folder"
+        android:src="@drawable/ic_folder"
+        android:background="@drawable/shadow_background_down"/>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="80"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewFolderName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:maxLines="1"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:text="@string/new_folder"
+            android:textColor="@color/text_color"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewVideoCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewFolderName"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/shadow_background_down"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:text="@string/dummy_4_videos"
+            android:textColor="@color/text_color"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</LinearLayout>

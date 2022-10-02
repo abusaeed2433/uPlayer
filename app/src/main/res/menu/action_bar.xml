@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/sortBy"
+        android:title="@string/sort_by"
+        app:showAsAction="never">
+        <menu>
+            <item
+                android:id="@+id/sortByName1"
+                android:title="@string/a_to_z"/>
+            <item
+                android:id="@+id/sortByName2"
+                android:title="@string/z_to_a"/>
+            <item
+                android:id="@+id/sortByDate"
+                android:title="@string/date"/>
+        </menu>
+    </item>
+    <item
+        android:id="@+id/showAs"
+        android:title="@string/show_as"
+        app:showAsAction="never">
+        <menu>
+            <item
+                android:id="@+id/showAsList"
+                android:title="@string/list"
+                app:showAsAction="never"/>
+            <item
+                android:id="@+id/showAsGrid"
+                android:title="@string/grid"
+                app:showAsAction="never"/>
+        </menu>
+    </item>
+    <item
+        android:id="@+id/theme"
+        android:title="@string/theme"
+        app:showAsAction="never">
+        <menu>
+            <item
+                android:id="@+id/themeNormal"
+                android:title="@string/normal"/>
+            <item
+                android:id="@+id/themColoured"
+                android:title="@string/coloured"/>
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/review"
+        android:title="@string/review"
+        app:showAsAction="never"/>
+
+</menu>

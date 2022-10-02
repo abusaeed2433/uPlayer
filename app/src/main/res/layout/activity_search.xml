@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivitySearch"
+    android:background="@color/neu_background">
+
+    <EditText
+        android:id="@+id/editTextSearch"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_margin="4dp"
+        android:autofillHints="@string/search_in_all_files"
+        android:background="@drawable/shadow_background_down"
+        android:drawableEnd="@drawable/ic_search"
+        android:hint="@string/search_in_all_files"
+        android:inputType="text"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:textColor="@color/hint_color"
+        android:textColorHint="#808080" />
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/textViewNotMatch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextSearch"
+        android:text="@string/no_file_found"
+        android:textStyle="bold"
+        android:elevation="1dp"
+        android:fontFamily="serif-monospace"
+        android:textAllCaps="true"
+        android:textSize="25sp"
+        android:textAlignment="center"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewSearch"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/file_list"
+        tools:itemCount="6"
+        android:layout_below="@+id/editTextSearch"/>
+
+</RelativeLayout>

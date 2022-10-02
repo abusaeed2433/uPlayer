@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".LockScreen"
+    android:orientation="vertical"
+    android:background="@color/neu_background"
+    android:weightSum="18">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp">
+
+        <android.widget.Button
+            android:id="@+id/buttonForgotPin"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/shadow_background_up"
+            android:text="@string/forgot_pin"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintVertical_bias="0"
+            android:textColor="@color/text_color"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/textView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="@string/what_are_extra_file"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintVertical_bias="0"
+            android:textColor="@color/text_color"
+            app:layout_constraintBottom_toBottomOf="@+id/buttonNotifyExtra"
+            app:layout_constraintEnd_toStartOf="@+id/buttonNotifyExtra"
+            app:layout_constraintTop_toTopOf="@+id/buttonNotifyExtra" />
+
+        <ImageView
+            android:id="@+id/buttonNotifyExtra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:contentDescription="@string/notify_button"
+            android:src="@drawable/ic_notify"
+            app:layout_constraintHorizontal_bias="1"
+            app:layout_constraintVertical_bias="0"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout><!--    4-->
+
+    <TextView
+        android:id="@+id/TextViewFirstTime"
+        android:text="@string/enter_pin"
+        android:textSize="23sp"
+        android:textColor="@color/text_color"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_weight="2"/><!--    2-->
+
+    <TextView
+        android:id="@+id/TextViewTemporary"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:textColor="@color/text_color"
+        android:text=""
+        android:gravity="center"
+        android:textSize="16sp"
+        android:layout_weight="1"/><!--    1-->
+    
+    <TextView
+        android:id="@+id/TextViewShowPin"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        tools:text="1234"
+        android:background="@drawable/shadow_background_down"
+        android:textColor="@color/text_color"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:text=""
+        android:textSize="22sp"/>
+    
+    <androidx.gridlayout.widget.GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:rowCount="3"
+        app:columnCount="3">
+
+        <android.widget.Button
+            android:id="@+id/button1"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_rowWeight="1"
+            app:layout_columnWeight="1"
+            android:background="@drawable/shadow_up_ripple"
+            android:text="@string/one_number"
+            android:textColor="@color/text_color"
+            android:textSize="35sp"/>
+
+        <android.widget.Button
+            android:id="@+id/button2"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_rowWeight="1"
+            app:layout_columnWeight="1"
+            android:background="@drawable/shadow_up_ripple"
+            android:text="@string/two_number"
+            android:textColor="@color/text_color"
+            android:textSize="35sp"/>
+
+        <android.widget.Button
+            android:id="@+id/button3"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_rowWeight="1"
+            app:layout_columnWeight="1"
+            android:background="@drawable/shadow_up_ripple"
+            android:text="@string/three_number"
+            android:textColor="@color/text_color"
+            android:textSize="35sp" />
+
+        <android.widget.Button
+            android:id="@+id/button4"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_rowWeight="1"
+            app:layout_columnWeight="1"
+            android:background="@drawable/shadow_up_ripple"
+            android:text="@string/four_number"
+            android:textColor="@color/text_color"
+            android:textSize="35sp"/>
+
+        <android.widget.Button
+            android:id="@+id/button5"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_rowWeight="1"
+            app:layout_columnWeight="1"
+            android:background="@drawable/shadow_up_ripple"
+            android:text="@string/five_number"
+            android:textColor="@color/text_color"
+            android:textSize="35sp"/>
+
+        <android.widget.Button
+            android:id="@+id/button6"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_rowWeight="1"
+            app:layout_columnWeight="1"
+            android:background="@drawable/shadow_up_ripple"
+            android:text="@string/six_number"
+            android:textColor="@color/text_color"
+            android:textSize="35sp"/>
+
+        <android.widget.Button
+            android:id="@+id/button7"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_rowWeight="1"
+            app:layout_columnWeight="1"
+            android:background="@drawable/shadow_up_ripple"
+            android:text="@string/seven_number"
+            android:textColor="@color/text_color"
+            android:textSize="35sp"/>
+
+        <android.widget.Button
+            android:id="@+id/button8"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_rowWeight="1"
+            app:layout_columnWeight="1"
+            android:background="@drawable/shadow_up_ripple"
+            android:text="@string/eight_number"
+            android:textColor="@color/text_color"
+            android:textSize="35sp"/>
+
+        <android.widget.Button
+            android:id="@+id/button9"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_rowWeight="1"
+            app:layout_columnWeight="1"
+            android:background="@drawable/shadow_up_ripple"
+            android:text="@string/nine_number"
+            android:textColor="@color/text_color"
+            android:textSize="35sp"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_rowWeight="1"
+            app:layout_columnWeight="1"
+            android:background="@drawable/shadow_background_down"/>
+
+        <android.widget.Button
+            android:id="@+id/button0"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_rowWeight="1"
+            app:layout_columnWeight="1"
+            android:background="@drawable/shadow_up_ripple"
+            android:text="@string/zero_string"
+            android:textColor="@color/text_color"
+            android:textSize="35sp"/>
+
+        <ImageButton
+            android:id="@+id/button10"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_rowWeight="1"
+            app:layout_columnWeight="1"
+            android:src="@drawable/ic_backspace"
+            android:background="@drawable/shadow_down_ripple"
+            android:contentDescription="@string/backspace_button" />
+        
+    </androidx.gridlayout.widget.GridLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+</LinearLayout>

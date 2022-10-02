@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="1dp"
+    android:layout_marginRight="1dp"
+    android:layout_marginTop="2dp"
+    android:elevation="5dp"
+    android:padding="2dp"
+    android:id="@+id/linearLayoutFileList">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
+        android:orientation="vertical"
+        android:weightSum="100"
+        android:background="@drawable/coloured_gradient_background">
+        <ImageView
+            android:id="@+id/ImageViewThumbnail"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="75"
+            android:background="@drawable/round_corner_only"
+            android:contentDescription="@string/video_thumb"/>
+        <TextView
+            android:id="@+id/TextViewTitle"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="25"
+            android:layout_gravity="center"
+            android:textAllCaps="false"
+            android:textStyle="normal"
+            android:text="@string/dummy"
+            android:gravity="center_horizontal"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif"
+            android:background="#00DAEDCC"
+            android:layout_marginBottom="3dp"
+            android:maxLines="1"/>
+        <ImageButton
+            android:visibility="gone"
+            android:id="@+id/ImageButtonMore"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="0"
+            android:src="@drawable/ic_more"
+            android:contentDescription="@string/more"
+            android:background="#00DAEDCC"
+            android:layout_gravity="center_vertical"/>
+    </LinearLayout>
+
+</LinearLayout>

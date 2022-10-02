@@ -1,0 +1,81 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="AppThemeCustomFull" parent="@style/AppTheme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTranslucentNavigation">false</item>
+        <item name="android:statusBarColor">@color/dim_white</item>
+        <item name="windowActionModeOverlay">true</item>
+
+        <item name="android:textColorPrimary">@color/purple_700</item>
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppThemeCustom" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <item name="colorPrimary">#4B04B1</item>
+        <item name="colorPrimaryDark">#160243</item>
+        <item name="colorAccent">#036A60</item>
+    </style>
+
+    <style name="AppThemeCustom2" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <item name="colorPrimary">#6729BC</item>
+        <item name="colorPrimaryDark">#583E91</item>
+        <item name="colorAccent">#33978D</item>
+        <item name="android:textColorHint">#454545</item>
+    </style>
+
+    <style name="AppThemePlayerView" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.MaterialComponents.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.MaterialComponents.ActionBar" />
+
+    <style name="CustomTheme" parent="android:Theme.Holo.Light" />
+
+    <style name="SplashTheme" parent="AppTheme">
+        <item name="android:windowBackground">@drawable/logo</item>
+    </style>
+
+    <style name="PauseDialog" parent="Theme.MyDialog">
+        <item name="android:windowAnimationStyle">@style/PauseDialogAnimation</item>
+    </style>
+    <style name="PauseDialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/slide_up</item>
+        <item name="android:windowExitAnimation">@anim/slide_down</item>
+    </style>
+
+
+    <style name="Theme.MyDialog" parent="Theme.MaterialComponents.Light.Dialog">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+    </style>
+
+    <style name="CustomDialog" parent="Theme.MaterialComponents.Light.Dialog">
+        <item name="android:textColorHint">#454545</item>
+        <item name="colorPrimary">#CCD3CC</item>
+    </style>
+
+</resources>

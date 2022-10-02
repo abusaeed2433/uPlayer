@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/LayoutToastSound">
+
+    <ImageView
+        android:id="@+id/ImageViewSound"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:contentDescription="@string/sound_icon"/>
+    <TextView
+        android:id="@+id/TextViewToastSound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="35sp"
+        android:textColor="#0000FF"
+        android:layout_toEndOf="@+id/ImageViewSound" />
+
+</RelativeLayout>
